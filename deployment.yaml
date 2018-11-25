@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: landing-page-deployment
+  labels:
+    app: landing-page
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: landing-page
+  template:
+    metadata:
+      labels:
+        app: landing-page
+        tier: web
+    spec:
+      containers:
+      - name: landing-page
+        image: hehk/lunch-landing-page:master
+        ports:
+          - containerPort: 80
