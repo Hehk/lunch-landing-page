@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <P>Solving the greatest threat to workplace sanity.</P>
     <P>Ordering lunch!</P>
-    <A href="https://github.com/hehk/lunch">Currently under active development</A>
+    <P><b>CURRENTLY UNDER ACTIVE DEVELOPMENT!</b></P>
   </Layout>
 )
 
