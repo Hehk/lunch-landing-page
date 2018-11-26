@@ -17,6 +17,8 @@ spec:
     spec:
       containers:
       - name: landing-page
+        # Keep until versioning and latest are setup in dockerhub
+        imagePullPolicy: Always
         image: hehk/lunch-landing-page:master
         ports:
           - containerPort: 80
